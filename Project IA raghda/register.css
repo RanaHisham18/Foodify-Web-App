@@ -1,0 +1,75 @@
+.image{
+  cursor: pointer;
+  height:70px;
+   width:130px;
+  margin-left: 20px;
+}
+body{
+    background-image: url("images/background.jpeg");
+    background-size: cover;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    padding: 4px;
+    background-color:transparent;
+  }
+  
+  /* input fields */
+  input[type=text], input[type=password] {
+    width :45%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /*styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #3a450b;
+    color: white;
+    padding: 16px 20px;
+    margin-left: 120px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    width: 20%;
+    border-radius: 3px;
+    opacity: 0.8;
+  }
+
+  /*hover when clicked*/
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a background color and center the text of the "sign in" section */
+  .signin {
+    background-color: transparent;
+    padding: 15px 20px;
+    margin-left: 100px;
+    width: 45%;
+    height: 58px;
+    text-align: center;
+   
+  }
