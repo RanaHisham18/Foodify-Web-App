@@ -1,3 +1,4 @@
+<?php include('server1.php');?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="register.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Foodify</title>
 </head>
 <body>
     <!--Navigation Bar-->
@@ -40,7 +41,16 @@
     </nav>
 
 
-    <form action="">
+    <form method="post" action="register.php">
+      <?php if(count($error)>0);?>
+      <div class="error">
+        <?php foreach($error as $error1){
+          echo $error1;
+          echo "<br>";
+        }
+        ?>
+      </div>
+
       <div class="container">
         <h1>Register</h1>
         <p>Please fill in this form to create an account.</p>
@@ -48,35 +58,35 @@
         <label for="firstname"><b>First Name</b></label>
         <br>
 
-        <input type="text" placeholder="Enter First Name" name="firstname" id="firstname" required>
+        <input type="text" placeholder="Enter First Name" name="firstname" id="firstname">
         <br>
 
         <label for="lastname"><b>Last Name</b></label>
         <br>
 
-        <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname" required>
+        <input type="text" placeholder="Enter Last Name" name="lastname" id="lastname">
         <br>
 
         <label for="email"><b>Email</b></label>
         <br>
 
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <input type="email" placeholder="Enter Email" name="email" id="email">
         <br>
 
         <label for="psw"><b>Password</b></label>
         <br>
 
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+        <input type="password" placeholder="Enter Password" name="psw1" id="psw1">
         <br>
 
-        <label for="psw-repeat"><b>Confirm Password</b></label>
+        <label for="confirmpassword"><b>Confirm Password</b></label>
         <br>
 
-        <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+        <input type="password" placeholder="Confirm Password" name="psw2" id="psw2">
         
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
     
-        <button type="submit" class="registerbtn">Register</button>
+        <button type="submit" class="registerbtn" name="register">Register</button>
       </div>
       
       <div class=" signin">
