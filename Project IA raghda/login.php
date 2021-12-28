@@ -1,3 +1,4 @@
+<?php include('server1.php');?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
     <link rel="stylesheet" href="login.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Foodify</title>
 </head>
 <body>
     <!--Navigation Bar-->
@@ -40,7 +41,15 @@
     </nav>
 
 
-    <form action="">
+    <form method="post" action="login.php">
+      <?php if(count($error)>0);?>
+      <div class="error">
+        <?php foreach($error as $error1){
+          echo $error1;
+          echo "<br>";
+        }
+        ?>
+      </div>
       <div class="container">
         <h1>Log in</h1>
         <p>Please fill in this form to enter your account and view recipes.</p>
@@ -59,12 +68,9 @@
         <br>
 
         
-        <button type="submit" class="loginbtn">Log In</button>
+        <button type="submit" name="login" class="loginbtn">Log In</button>
       </div>
-      <!-- 
-      <div class=" signin">
-        <p>Already have an account? <a href="#">Sign in</a>.</p>
-      </div> -->
+      <p>Not yet a member?<a href="register.php">Sign up</a></p>
     </form>
     
 </body>
