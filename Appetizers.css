@@ -1,0 +1,36 @@
+body
+{
+    background-color: #f5cda0;
+}
+.container
+{ 
+    padding:10px;
+    
+    
+}
+.recipes
+{
+    clear:both;
+    width:50%;
+    float:left;
+    font-size:18px;
+    
+}
+.image
+{
+    float:right;
+    width:50%;
+}
+.inst1
+{
+clear: both;
+width: 50%;
+float: left;
+font-size: 18px;
+}
+.inst2
+{
+    width: 50%;
+    float: right;
+    font-size: 18px;
+}
