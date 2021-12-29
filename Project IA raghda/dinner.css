@@ -25,6 +25,14 @@ body{
     margin: 25px;
     float: left;
 }
+.spaghettiimg{
+    width: 50%;
+    margin: 25px;
+    float: left;
+}
+.spaghettitext{
+    margin-top: 130px;
+}
 
 h4{
     margin-left: 60px;
