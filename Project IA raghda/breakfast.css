@@ -23,3 +23,16 @@ body{
     margin: 25px;
     float: left;
 }
+
+.muffinsimg{
+    width: 50%;
+    margin: 25px;
+    float: left;
+}
+.muffinstext{
+    margin-top: 130px;
+}
+
+h4{
+    margin-left: 60px;
+}
