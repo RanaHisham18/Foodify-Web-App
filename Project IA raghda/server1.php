@@ -30,11 +30,12 @@ if(isset($_POST['register'])){
         array_push($error,"Passwords do not match");
     }
     if(count($error)==0){
-        $sql="INSERT INTO users(firstname,lastname,email,'password','confirmpassword') Values('$firstname','$lastname','$email','$password1','$password2')";
+        $sql="INSERT INTO users(firstname,lastname,email,password,confirmpassword) Values('$firstname','$lastname','$email','$password1','$password2')";
         mysqli_query($db,$sql);
     }
     
 }
+//login
 if(isset($_POST['login'])){
     $email=mysqli_real_escape_string($db,$_POST['email']);
     $password=mysqli_real_escape_string($db,$_POST['psw']);
@@ -54,4 +55,10 @@ if(isset($_POST['login'])){
             /*header('Location:recipes.php');*/
         }
     }
+}
+//logout
+if(isset($_GET['logout'])){
+    session_destroy();
+    unset($_SESSION['email']);
+    header('location:login.php');
 }
