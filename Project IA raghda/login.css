@@ -1,9 +1,16 @@
+/*logo image*/
 .image{
   cursor: pointer;
   height:70px;
    width:130px;
   margin-left: 20px;
 }
+
+.scroll{
+  margin-top:200px;
+  margin-left:50px;
+}
+
 body{
     background-image: url("images/background.jpeg");
     background-size: cover;
@@ -18,7 +25,7 @@ body{
   }
   
   /* input fields */
-  input[type=text], input[type=password], input[type=email] {
+  input[type=text], input[type=password] {
     width :45%;
     padding: 15px;
     margin: 5px 0 10px 0;
@@ -26,13 +33,23 @@ body{
     border: none;
     border-radius: 3px;
     background: #f1f1f1;
+    
   }
   
-  input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
-  
+
+  input[type=radio]{
+    margin-top: 20px;
+   }
+   
+
+   .signupredirect{
+    margin-left: 345px;
+    margin-top: 30px;
+   }
   /*styles of hr */
   hr {
     border: 1px solid #f1f1f1;
@@ -40,11 +57,12 @@ body{
   }
   
   /* Set a style for the submit button */
-  .registerbtn {
+  .loginbtn  {
     background-color: #3a450b;
     color: white;
     padding: 16px 20px;
     margin-left: 120px;
+    margin-top: 50px;
     border: none;
     cursor: pointer;
     text-align: center;
@@ -54,22 +72,6 @@ body{
   }
 
   /*hover when clicked*/
-  .registerbtn:hover {
+  .loginbtn:hover {
     opacity: 1;
-  }
-  
-  /* Add a blue text color to links */
-  a {
-    color: dodgerblue;
-  }
-  
-  /* Set a background color and center the text of the "sign in" section */
-  .signin {
-    background-color: transparent;
-    padding: 15px 20px;
-    margin-left: 100px;
-    width: 45%;
-    height: 58px;
-    text-align: center;
-   
   }
