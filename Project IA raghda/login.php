@@ -58,7 +58,7 @@
         <label for="email"><b>Email</b></label>
         <br>
 
-        <input type="email" placeholder="Enter Email" name="email" id="email" required>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
         <br>
 
         <label for="psw"><b>Password</b></label>
@@ -75,8 +75,8 @@
             /* header('location:')*/
             //}
             //else {
-               /* header('location: admin.php')
-                  }*/
+               /* header('location: admin.php')*/
+                  } }
                     ?>
 
                     <br>
