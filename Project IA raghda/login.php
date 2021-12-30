@@ -58,7 +58,7 @@
         <label for="email"><b>Email</b></label>
         <br>
 
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+        <input type="email" placeholder="Enter Email" name="email" id="email" required>
         <br>
 
         <label for="psw"><b>Password</b></label>
@@ -67,23 +67,22 @@
         <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
         <br>
 
-        <input type="checkbox" name="Status" value="Admin">Admin</input>
-        <input type="checkbox" name="Status" value="user">User</input>
+        <input type="radio" name="Status" value="Admin">Admin</input>
+        <input type="radio" name="Status" value="user">User</input>
         <?php
           if (isset($_POST['status'])){
             if($_POST['status'] == "user"){
             /* header('location:')*/
-            }
-            else {
-               /* header('location:')*/
-            }
-         // echo $_POST['gender']; // Displays value of checked checkbox.
-
-                  }
+            //}
+            //else {
+               /* header('location: admin.php')
+                  }*/
                     ?>
+
+                    <br>
         <button type="submit" name="login" class="loginbtn">Log In</button>
       </div>
-      <p>Not yet a member?<a href="register.php">Sign up</a></p>
+      <p class="signupredirect">Not yet a member? <a href="register.php">Sign up</a></p>
     </form>
     
 </body>

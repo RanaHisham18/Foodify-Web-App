@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="dinner.css" type="text/css">
+    <link rel="stylesheet" href="admin.css" type="text/css">
 </head>
 <body>
     <!--Navigation Bar-->
@@ -34,7 +34,7 @@
   
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="logout.php?logout='1'">Log Out</a>
+                  <a class="nav-link" href="login.php?logout='1'">Log Out</a>
                   <?php include('server1.php');
                   ?>
                   <section>
