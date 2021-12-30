@@ -67,7 +67,20 @@
         <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
         <br>
 
-        
+        <input type="checkbox" name="Status" value="Admin">Admin</input>
+        <input type="checkbox" name="Status" value="user">User</input>
+        <?php
+          if (isset($_POST['status'])){
+            if($_POST['status'] == "user"){
+            /* header('location:')*/
+            }
+            else {
+               /* header('location:')*/
+            }
+         // echo $_POST['gender']; // Displays value of checked checkbox.
+
+                  }
+                    ?>
         <button type="submit" name="login" class="loginbtn">Log In</button>
       </div>
       <p>Not yet a member?<a href="register.php">Sign up</a></p>
