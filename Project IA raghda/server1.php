@@ -6,10 +6,6 @@ if(!isset($_SESSION)){
 $error=array();
 $db=mysqli_connect('localhost','root','','section');
 
-/*if($db){
-    echo"connected";
-}
-else{die("failed");}*/
 
 if(isset($_POST['register'])){
     $firstname=mysqli_real_escape_string($db,$_POST['firstname']);
@@ -37,11 +33,11 @@ if(isset($_POST['register'])){
     }
     if(count($error)==0){
         $sql="INSERT INTO users(firstname,lastname,email,password,confirmpassword) Values('$firstname','$lastname','$email','$password1','$password2')";
- 
         mysqli_query($db,$sql);
     }
     
 }
+//login
 if(isset($_POST['login'])){
     $email=mysqli_real_escape_string($db,$_POST['email']);
     $password=mysqli_real_escape_string($db,$_POST['psw']);
@@ -61,4 +57,10 @@ if(isset($_POST['login'])){
             header('Location:recipes.php');
         }
     }
+}
+//logout
+if(isset($_GET['logout'])){
+    session_destroy();
+    unset($_SESSION['email']);
+    header('location:login.php');
 }
