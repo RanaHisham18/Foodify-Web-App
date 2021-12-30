@@ -2,8 +2,14 @@
 if(!isset($_SESSION)){
     session_start();
 } 
+
 $error=array();
 $db=mysqli_connect('localhost','root','','section');
+
+/*if($db){
+    echo"connected";
+}
+else{die("failed");}*/
 
 if(isset($_POST['register'])){
     $firstname=mysqli_real_escape_string($db,$_POST['firstname']);
@@ -31,6 +37,7 @@ if(isset($_POST['register'])){
     }
     if(count($error)==0){
         $sql="INSERT INTO users(firstname,lastname,email,password,confirmpassword) Values('$firstname','$lastname','$email','$password1','$password2')";
+
         mysqli_query($db,$sql);
     }
     
@@ -52,7 +59,7 @@ if(isset($_POST['login'])){
             $_SESSION['email']=$email;
             $_SESSION['success']="Welcome you are logged in";
             //redirect user to recipes page
-            /*header('Location:recipes.php');*/
+            header('Location:recipes.php');
         }
     }
 }
