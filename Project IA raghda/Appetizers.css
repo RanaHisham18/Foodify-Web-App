@@ -4,10 +4,15 @@ body
 }
 .container
 { 
-    padding:10px;
+    padding:10px;}
+    .image{
+        cursor: pointer;
+        height:70px;
+         width:130px;
+        margin-left: 20px;
+      }   
     
-    
-}
+
 .recipes
 {
     clear:both;
@@ -16,7 +21,7 @@ body
     font-size:18px;
     
 }
-.image
+.imagestrips
 {
     float:right;
     width:50%;

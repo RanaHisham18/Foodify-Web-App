@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin panel</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="admin.css" type="text/css">
+     <link rel="stylesheet" href="snacks.css">
+    <title>Snacks</title>
 </head>
 <body>
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+     <!--Navigation Bar-->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <img class="image" src="images/foodify.png" alt="Foodify logo">  
         
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,30 +33,46 @@
                   <a class="nav-link" href="#recipes">Recipes</a>
   
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="login.php?logout='1'">Log Out</a>
-                  <?php include('server1.php');
-                  ?>
-                  <section>
-                      <?php
-                  if (isset($_SESSION['email'])){
-                      echo $_SESSION['email'];
-                  }
-                  if (isset($_SESSION['success'])){
-                      echo $_SESSION['success'];
-                      unset($_SESSION['success']);
-                  }
-                  ?>
-              </section>
-
-
-              
-                </li>
               </ul>
               
             </div>
           </div>
       </nav>
+      <br><br>
+      <div class="container">
+      <div class="recipes">
+          <h3>Snicky Snackies</h3>
+<p>
+    <strong>The ingredients are:</strong>
+    <ul>
+        <li>15 ounces mini twist pretzels</li>
+        <li>2 cups mixed nuts</li>
+        <li>1 cup unsalted butter</li>
+        <li>2 cups packed dark brown sugar</li>
+        <li>½ cup light corn syrup</li>
+        <li>1 pinch salt</li>
+      </ul>  
+      <strong>The instructions are:</strong>
+      <ol>
+        <li>Preheat oven to 250 degrees F (120 degrees C).</li>
+        <li>In a 9x13-inch baking dish, combine the pretzels and nuts. Set aside.</li> 
+        <li>In a large saucepan combine the butter, sugar, corn syrup and salt. Stir together over medium heat until sugar dissolves. 
+            Bring to a boil and cook until very thick and at the 'firm ball' stage (260 degrees F, 125 degrees C).
+             Remove from heat, pour over pretzel/nut mixture and mix all together.</li>
+        <li>Bake in the preheated oven for 20 minutes, stirring after 10 minutes.
+             Remove from oven and spread out on wax paper to cool.</li>
 
+      </ol>
+</p>
+      </div>
+      <div class="imagesnicky">
+          <img src="images/snicky snackies.jpg" width="600px" height="550px">
+      </div>
+  
+</div>
+    
+
+    
+       
 </body>
 </html>
