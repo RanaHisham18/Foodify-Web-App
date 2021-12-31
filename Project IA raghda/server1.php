@@ -54,7 +54,7 @@ if(isset($_POST['login'])){
             $_SESSION['email']=$email;
             $_SESSION['success']="Welcome you are logged in";
             //redirect user to recipes page
-            header('Location:recipes.php');
+            header('Location:records.php');
         }
     }
 }
