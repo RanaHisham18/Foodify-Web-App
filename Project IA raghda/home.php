@@ -10,7 +10,7 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Foodify</title>
 </head>
 <body>
     <!--Navigation Bar-->
@@ -24,13 +24,13 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="home.php">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Sign Up</a>
+                <a class="nav-link" href="register.php">Sign Up</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Log in</a>
+                <a class="nav-link" href="login.php">Log in</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#recipes">Recipes</a>
@@ -84,6 +84,6 @@
               
       </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

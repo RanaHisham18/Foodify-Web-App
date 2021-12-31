@@ -15,22 +15,21 @@ body{
 }
 
 
-.dinnerimg{
+.breakfastimg{
     margin: 15px;
-
 }
-
-.dinnertext{
+.breakfasttext{
     width: 50%;
     margin: 25px;
     float: left;
 }
-.spaghettiimg{
+
+.muffinsimg{
     width: 50%;
     margin: 25px;
     float: left;
 }
-.spaghettitext{
+.muffinstext{
     margin-top: 130px;
 }
 

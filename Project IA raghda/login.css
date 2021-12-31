@@ -1,10 +1,11 @@
-
+/*logo image*/
 .image{
   cursor: pointer;
   height:70px;
    width:130px;
   margin-left: 20px;
 }
+
 .scroll{
   margin-top:200px;
   margin-left:50px;
@@ -32,13 +33,23 @@ body{
     border: none;
     border-radius: 3px;
     background: #f1f1f1;
+    
   }
   
   input[type=text]:focus, input[type=password]:focus {
     background-color: #ddd;
     outline: none;
   }
-  
+
+  input[type=radio]{
+    margin-top: 20px;
+   }
+   
+
+   .signupredirect{
+    margin-left: 345px;
+    margin-top: 30px;
+   }
   /*styles of hr */
   hr {
     border: 1px solid #f1f1f1;
@@ -51,6 +62,7 @@ body{
     color: white;
     padding: 16px 20px;
     margin-left: 120px;
+    margin-top: 50px;
     border: none;
     cursor: pointer;
     text-align: center;
