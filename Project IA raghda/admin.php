@@ -48,6 +48,42 @@
                   }
                   ?>
               </section>
+
+              <h2>Reciepe details for admin.</h2>
+
+              <center> 
+             <table border="2">
+            <tr>
+                <td>id</td>
+                <td>name</td> 
+                <td>category</td> 
+                <td>image</td>
+            </tr>
+              <?php include "server1.php";
+              $records = mysqli_query($db, "select * from products");
+            while ($data = mysqli_fetch_array($records)){ ?> 
+           <tr>
+
+           <td><?php echo $data['id'];?></td>
+           <td><?php echo $data['reciepename'];?></td>
+           <td><?php echo $data['category'];?></td>
+           <td>
+               <img src = "<?php echo $data ['image'];?>"/>
+           </td>
+
+           <td><a href ="edit.php?id=<?php echo $data ['id']; ?>"> Edit </td>
+           <td><a href ="delete.php?id=<?php echo $data ['id']; ?>"> Delete </td>
+           </tr>
+           
+           <?php } ?>
+
+              </center>
+            </table>
+        
+
+
+
+              ?>
   
                 </li>
               </ul>
