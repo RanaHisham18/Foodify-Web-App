@@ -43,8 +43,9 @@
  <?php
  include "server1.php";
  $id = $_GET ['id'] ;
- $selectall =  "select * from reciepes where id ='$id'";
- $qry1 = mysqli_query($db, $selectall) or die( mysqli_error($db));
+ //null collapse operator is used to eliminate a warning concern the id
+
+ $qry1 = mysqli_query($db, "select * from reciepes where id ='$id'") or die( mysqli_error($db));
  $data = mysqli_fetch_array($qry1);
 
 ////////////////////////

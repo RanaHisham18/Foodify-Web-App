@@ -44,7 +44,7 @@
  include "server1.php";
  $id = $_GET ['id'] ;
  $selectall =  "select * from reciepes where id ='$id'";
- $qry1 = mysqli_query($db, $selectall) or die( mysqli_error($db));
+ $qry1 = mysqli_query($db,) or die( mysqli_error($db));
  $data = mysqli_fetch_array($qry1);
 
 ////////////////////////
