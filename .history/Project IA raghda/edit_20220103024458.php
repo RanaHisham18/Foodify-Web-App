@@ -57,7 +57,7 @@ if(isset($_POST['update']))
  $category = $_POST['category'];
  $image = $_POST['image'];
  $sql1= "update reciepe set reciepe name = '$reciepename', category = '$category', image = '$image', where id = '$id'";
- $edit = mysqli_query($db, $sql1); 
+ $edit = mysqli_query($db, $sqli1); 
 
     if ($edit){
 mysqli_close ($db);

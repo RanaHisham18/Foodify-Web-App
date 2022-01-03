@@ -30,11 +30,11 @@
     ?>
     <tr>
         <Td><?php echo $data['name'] ?> </Td>
-        <Td><?php echo $data['Id'] ?> </Td>
+        <Td><?php echo $data['id'] ?> </Td>
         <Td><?php echo $data['category'] ?> </Td>
         <td><img src=" <?php echo $data['image']; ?>"/> </td>
-        <td><a href=" edit.php?id= <?php echo $data['Id']; ?>">Edit</a></td>
-        <td><a href=" delete.php?id= <?php echo $data['Id']; ?>">Delete</a></td>
+        <td><a href=" edit.php?id= <?php echo $data['id']; ?>">Edit</a></td>
+        <td><a href=" delete.php?id= <?php echo $data['id']; ?>">Delete</a></td>
 
     </tr>
 

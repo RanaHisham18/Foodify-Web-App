@@ -21,20 +21,19 @@
     <?php
 
     include "server1.php"; //database connection
-    $queryselect = 'select*from reciepes';
-    $records=mysqli_query($db,$queryselect); //fetch data
-    //$data = $records;
+$queryselect = 'select*from reciepes';
+    $records=mysqli_query($db,$q //fetch data
 
-    while ($data = mysqli_fetch_array($records))
+    if ($roww=mysqli_fetch_array($records))
 {
     ?>
     <tr>
-        <Td><?php echo $data['name'] ?> </Td>
-        <Td><?php echo $data['Id'] ?> </Td>
-        <Td><?php echo $data['category'] ?> </Td>
-        <td><img src=" <?php echo $data['image']; ?>"/> </td>
-        <td><a href=" edit.php?id= <?php echo $data['Id']; ?>">Edit</a></td>
-        <td><a href=" delete.php?id= <?php echo $data['Id']; ?>">Delete</a></td>
+        <Td><?php echo $roww['name'] ?> </Td>
+        <Td><?php echo $roww['id'] ?> </Td>
+        <Td><?php echo $roww['category'] ?> </Td>
+        <td><img src=" <?php echo $roww['image']; ?>"/> </td>
+        <td><a href=" edit.php?id= <?php echo $roww['id']; ?>">Edit</a></td>
+        <td><a href=" delete.php?id= <?php echo $roww['id']; ?>">Delete</a></td>
 
     </tr>
 

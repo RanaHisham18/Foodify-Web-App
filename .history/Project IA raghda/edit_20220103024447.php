@@ -57,7 +57,7 @@ if(isset($_POST['update']))
  $category = $_POST['category'];
  $image = $_POST['image'];
  $sql1= "update reciepe set reciepe name = '$reciepename', category = '$category', image = '$image', where id = '$id'";
- $edit = mysqli_query($db, $sql1); 
+ $edit = mysqli_query($db, $sqli1); 
 
     if ($edit){
 mysqli_close ($db);
@@ -72,9 +72,9 @@ header('location:records.php'); }
  <h3> Update Data of the reciepes.</h3>
  <form method="POST">
 <input type="text" name="name" value="<?php echo $data ['name'] ?>" placeholder="Enter reciepe name" required> <br><br>
-<input type="text" name="category" value="<?php echo $data ['category'] ?>" placeholder="Enter category" required> <br><br>
+<input type="text" name="rcategory" value="<?php echo $data ['category'] ?>" placeholder="Enter category" required> <br><br>
 <input type="text" name="image" value="<?php echo $data ['image'] ?>" placeholder="Choose image" required> <br>
-<input type="submit" name="update" value="Update">
+<input type="submit" name="uupdate" value="Update">
 
  </form>
  
