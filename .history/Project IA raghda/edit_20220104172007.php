@@ -42,7 +42,7 @@
     </nav>
  <?php
  include "server1.php";
- $id = $_GET ['Id'] ;
+ $id = $_GET ['id'] ;
  $selectall =  "select * from reciepes where Id ='$id'";
  $qry1 = mysqli_query($db, $selectall);
  $data = mysqli_fetch_array($qry1);
@@ -51,13 +51,12 @@
 
 if(isset($_POST['update']))
     {  
-      
          //can not update the id 
  $reciepename = $_POST['name'];
  $category = $_POST['category'];
  $image = $_POST['image'];
  /* $id = $_POST['Id'];*/
- $sql1= "update reciepes set name = '$reciepename', category = '$category', image = '$image', where Id = '$id'";
+ $sql1= "update reciepes set name = '$reciepename', category = '$category', image = '$image', where id = '$id'";
  $edit = mysqli_query($db, $sql1); 
 
     if ($edit){
@@ -65,7 +64,7 @@ mysqli_close ($db);
 header('location:records.php'); }
 
  else{
-    echo"An Error Occured";
+    echo mysql
  }
     }
  ?> 

@@ -51,13 +51,12 @@
 
 if(isset($_POST['update']))
     {  
-      
          //can not update the id 
  $reciepename = $_POST['name'];
  $category = $_POST['category'];
  $image = $_POST['image'];
  /* $id = $_POST['Id'];*/
- $sql1= "update reciepes set name = '$reciepename', category = '$category', image = '$image', where Id = '$id'";
+ $sql1= "update reciepes set name = '$reciepename', category = '$category', image = '$image', where id = '$id'";
  $edit = mysqli_query($db, $sql1); 
 
     if ($edit){

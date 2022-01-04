@@ -51,7 +51,6 @@
 
 if(isset($_POST['update']))
     {  
-      
          //can not update the id 
  $reciepename = $_POST['name'];
  $category = $_POST['category'];

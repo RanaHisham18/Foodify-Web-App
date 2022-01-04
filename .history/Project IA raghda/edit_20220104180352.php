@@ -42,16 +42,15 @@
     </nav>
  <?php
  include "server1.php";
- $id = $_GET ['Id'] ;
+   if ($id = $_GET ['Id']){ 
  $selectall =  "select * from reciepes where Id ='$id'";
  $qry1 = mysqli_query($db, $selectall);
- $data = mysqli_fetch_array($qry1);
+ $data = mysqli_fetch_array($qry1); }
 
 ////////////////////////
 
 if(isset($_POST['update']))
     {  
-      
          //can not update the id 
  $reciepename = $_POST['name'];
  $category = $_POST['category'];
