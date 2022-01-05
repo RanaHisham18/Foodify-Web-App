@@ -42,9 +42,9 @@
     </nav>
  <?php
  include "server1.php";
- $id = $_GET ['id'] ;
-/* $selectall =  "select * from reciepes where id ='$id'";*/
- $qry1 = mysqli_query($db,"select * from reciepes where id ='$id'");
+ $id = $_GET ['Id'] ;
+ $selectall =  "select * from reciepes where Id ='$id'";
+ $qry1 = mysqli_query($db, $selectall);
  $data = mysqli_fetch_array($qry1);
 
 ////////////////////////

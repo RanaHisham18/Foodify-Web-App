@@ -30,7 +30,7 @@
     ?>
     <tr>
         <Td><?php echo $data['name'] ?> </Td>
-        <Td><?php echo $data['id'] ?> </Td>
+        <Td><?php echo $data['Id'] ?> </Td>
         <Td><?php echo $data['category'] ?> </Td>
         <td><img src=" <?php echo $data['image']; ?>"/> </td>
         <td><a href=" edit.php?id= <?php echo $data['id']; ?>">Edit</a></td>

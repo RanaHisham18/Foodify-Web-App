@@ -42,9 +42,9 @@
     </nav>
  <?php
  include "server1.php";
- $id = $_GET ['id'] ;
-/* $selectall =  "select * from reciepes where id ='$id'";*/
- $qry1 = mysqli_query($db,"select * from reciepes where id ='$id'");
+ $id = $_GET ['Id'] ;
+ $selectall =  "select * from reciepes where Id ='$id'";
+ $qry1 = mysqli_query($db, $selectall);
  $data = mysqli_fetch_array($qry1);
 
 ////////////////////////
@@ -73,9 +73,9 @@ header('location:records.php'); }
 
  <h3> Update Data of the reciepes.</h3>
  <form method="POST">
-<input type="text" name="name" value="<?php echo $data ['name'] ?>" placeholder="Enter reciepe name" required> <br><br>
+<input type="text" name="namee" value="<?php echo $data ['name'] ?>" placeholder="Enter reciepe name" required> <br><br>
 <input type="text" name="category" value="<?php echo $data ['category'] ?>" placeholder="Enter category" required> <br><br>
-<input type="text" name="image" value="<?php echo $data ['image'] ?>" placeholder="Choose image" required> <br>
+<input type="text" name="imagee" value="<?php echo $data ['image'] ?>" placeholder="Choose image" required> <br>
 <input type="submit" name="update" value="Update">
 
  </form>
