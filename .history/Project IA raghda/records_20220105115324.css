@@ -1,0 +1,28 @@
+body{
+    background-color: #f5cda0;
+}
+
+
+.image{
+    cursor: pointer;
+    height:70px;
+     width:130px;
+    margin-left: 20px;
+  }
+  .scroll{
+    margin-top:200px;
+    margin-left:50px;
+}
+h2{
+    font-style: bold ;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.text{
+    text-align: center;
+}
+
+.table{
+    width: ;
+}

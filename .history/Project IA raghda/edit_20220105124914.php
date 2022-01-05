@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-     <link rel="stylesheet" href="records.css" type="text/css">
-    <title>displaying records</title>
+     <link rel="stylesheet" href="edit.css" type="text/css">
+
+    <title>Update records from database</title>
 </head>
 <body>
 
@@ -39,43 +40,45 @@
           </div>
         </div>
     </nav>
-<h2>Recipes Details for Admin</h2>
-<center>
-    <table border="2">
-    <tr class="table">
-        <th>ID</th>
-        <th>Name</th>
-        <th>Category</th>
-        <th>Image</th>
-    </tr>
+ <?php
+ include "server1.php";
+ $id = $_GET ['id'] ;
+/* $selectall =  "select * from reciepes where id ='$id'";*/
+ $qry1 = mysqli_query($db,"select * from reciepes where id ='$id'");
+ $data = mysqli_fetch_array(@$qry1);
 
-    <?php
+////////////////////////
 
-    include "server1.php"; //database connection
-    $queryselect = 'select*from reciepes';
-    $records=mysqli_query($db,$queryselect); //fetch data
-    //$data = $records;
+if(isset($_POST['update']))
+    {  
 
-    while ($data = mysqli_fetch_array($records))
-{
-    ?>
-    <tr>
-        <Td class="text"><?php echo $data['name'] ?> </Td>
-        <Td class="text"><?php echo $data['id'] ?> </Td>
-        <Td class="text"><?php echo $data['category'] ?> </Td>
-        <td><img src=" <?php echo $data['image']; ?>" width = "200px", height="200px"/> </td>
-        <td><a href=" edit.php?id= <?php echo $data['id']; ?>">Edit</a></td>
-        <td><a href=" delete.php?id= <?php echo $data['id']; ?>">Delete</a></td>
+        
+ $reciepename = $_POST['name'];
+ $category = $_POST['category'];
+/* $image = $_POST['image'];*/
+ /* $id = $_POST['Id'];*/
+ $sql1= "update reciepes set name = '$reciepename', category = '$category', where Id = '$id'";
+ $edit = mysqli_query($db, $sql1); 
 
-    </tr>
+    if ($edit){
+mysqli_close ($db);
+echo " edit is successfuly";
+header('location:records.php'); }
 
-    <?php
-          }
-    ?>
-</center>
-</table>
+ else{
+    echo"An Error Occured";
+ }
+    }
+ ?> 
 
+ <h3> Update Data of the reciepes.</h3>
+ <form method="POST">
+<input type="text" name="name" value="<?php echo $data ['name'] ?>" placeholder="Enter reciepe name" required> <br><br>
+<input type="text" name="category" value="<?php echo $data ['category'] ?>" placeholder="Enter category" required> <br><br>
 
+<input type="submit" name="update" value="Update">
 
+ </form>
+ 
 </body>
 </html>

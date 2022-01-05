@@ -42,7 +42,7 @@
 <h2>Recipes Details for Admin</h2>
 <center>
     <table border="2">
-    <tr class="table">
+    <tr >
         <th>ID</th>
         <th>Name</th>
         <th>Category</th>

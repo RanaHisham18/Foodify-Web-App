@@ -39,10 +39,10 @@
           </div>
         </div>
     </nav>
-<h2>Recipes Details for Admin</h2>
+<h2>Recipes Details</h2>
 <center>
     <table border="2">
-    <tr class="table">
+    <tr>
         <th>ID</th>
         <th>Name</th>
         <th>Category</th>
@@ -62,7 +62,7 @@
     <tr>
         <Td class="text"><?php echo $data['name'] ?> </Td>
         <Td class="text"><?php echo $data['id'] ?> </Td>
-        <Td class="text"><?php echo $data['category'] ?> </Td>
+        <Td><?php echo $data['category'] ?> </Td>
         <td><img src=" <?php echo $data['image']; ?>" width = "200px", height="200px"/> </td>
         <td><a href=" edit.php?id= <?php echo $data['id']; ?>">Edit</a></td>
         <td><a href=" delete.php?id= <?php echo $data['id']; ?>">Delete</a></td>
