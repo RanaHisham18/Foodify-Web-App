@@ -1,0 +1,35 @@
+body
+{
+    background-color: blueviolet;
+}
+.container
+{ 
+    padding:10px;
+    
+    
+}
+.recipes
+{
+    clear:both;
+    width:50%;
+    float:left;
+    font-size:18px;
+    
+}
+.imagebr
+{
+    float:right;
+    width:50%;
+    padding-left: 40px;
+}
+
+.image{
+    cursor: pointer;
+    height:70px;
+     width:130px;
+    margin-left: 20px;
+  }
+  .scroll{
+      margin-top:200px;
+      margin-left:50px;
+  }
