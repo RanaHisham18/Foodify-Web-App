@@ -1,0 +1,45 @@
+.image{
+    cursor: pointer;
+    height:70px;
+     width:130px;
+    margin-left: 20px;
+  }
+  .scroll{
+      margin-top:200px;
+      margin-left:50px;
+  }
+  h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    margin: 75px;
+}
+body
+{
+    background-color: #f5cda0;
+}
+
+input[type=text] {
+    width :25%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    margin-left: 50px;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+.label{
+    margin: 35px;
+    font-size: 30px;
+}
+
+
+input[type= submit]{
+    margin: 5px 0 10px 0;
+
+}

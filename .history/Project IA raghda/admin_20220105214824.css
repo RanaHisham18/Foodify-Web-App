@@ -1,0 +1,14 @@
+.image{
+    cursor: pointer;
+    height:70px;
+     width:130px;
+    margin-left: 20px;
+  }
+  .scroll{
+      margin-top:200px;
+      margin-left:50px;
+  }
+  h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+}

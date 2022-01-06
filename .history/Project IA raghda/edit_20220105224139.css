@@ -1,0 +1,50 @@
+body{
+    background-color: #f5cda0;
+}
+
+
+.image{
+    cursor: pointer;
+    height:70px;
+     width:130px;
+    margin-left: 20px;
+  }
+  .scroll{
+    margin-top:200px;
+    margin-left:50px;
+}
+h3{
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+input[type=text] {
+    width :25%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    margin-left: 50px;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+
+  input[type = submit]{
+      width: 10%;
+      margin-top: 30px ;
+      margin-left: 140px;
+  }
+
+  .imageup{
+    width: 40%;
+    float: right;
+  }
+
+  .fo
+ 

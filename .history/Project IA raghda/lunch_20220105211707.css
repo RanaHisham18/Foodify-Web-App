@@ -1,0 +1,24 @@
+body
+{
+    background-color: #f5cda0;
+}
+.container
+{ 
+    padding:10px;
+    
+    
+}
+.recipes
+{
+    clear:both;
+    width:50%;
+    float:left;
+    font-size:18px;
+    
+}
+.imagerigatoni
+{
+    float:right;
+    width:50%;
+    padding-left: 40px;
+}
