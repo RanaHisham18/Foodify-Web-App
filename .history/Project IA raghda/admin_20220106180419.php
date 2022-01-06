@@ -48,7 +48,7 @@
     <form method="POST">
         <label class="label">Looking for something? Just type the id!</label>
         <input type="text" name="search" placeholder="search by ID" autocomplete="off" required>  <br> <br>
-        <input type="submit" name="submit" value="search">
+        <input type="submit" name="submit" value="search !">
     </form>
     
 <?php 

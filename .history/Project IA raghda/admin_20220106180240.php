@@ -46,9 +46,9 @@
     <div class="adminscreen">
     <header><h3>Admin interface</h3></header>
     <form method="POST">
-        <label class="label">Looking for something? Just type the id!</label>
+        <label class="label">look for something</label>
         <input type="text" name="search" placeholder="search by ID" autocomplete="off" required>  <br> <br>
-        <input type="submit" name="submit" value="search">
+        <input type="submit" name="submit" value="search !">
     </form>
     
 <?php 
@@ -102,7 +102,7 @@ else{
 
 ?>
 
-<label class="label2"> To display all reciepes from database click here </label>
+<label> To display all reciepes from database click here </label>
  <a href="records.php" > See more</a>
 
 </div>

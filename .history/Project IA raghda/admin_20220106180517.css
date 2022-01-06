@@ -32,8 +32,7 @@ input[type=text] {
     outline: none;
   }
 input[type= submit]{
-    margin-left: 45%;
-    margin-right: 45%;
+    margin-left: 90px;
     width: 10%;
 
 }
@@ -47,6 +46,6 @@ h3{
     margin: 75px;
 }
 
-.label2{
+label2{
     margin-top: 25px;
 }
