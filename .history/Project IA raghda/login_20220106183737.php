@@ -75,7 +75,7 @@
             header('location:admin.php');
             }
             else {
-                header('location: usermenu.html');
+                header('location: usermenu.');
                   } }
                     ?>
 

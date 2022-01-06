@@ -1,0 +1,27 @@
+.image{
+    cursor: pointer;
+    height:70px;
+     width:130px;
+    margin-left: 20px;
+  }
+  .scroll{
+      margin-top:200px;
+      margin-left:50px;
+  }
+body
+{
+    background-color: #f5cda0;
+}
+h2{
+    text-align: center;
+    margin-top:  20px;
+}
+table, th, td {
+    border:1px solid black;
+  }
+
+  .usermenu{
+      width: 70%;
+      text-align: center;
+      margin-left: 15px;
+  }
