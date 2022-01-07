@@ -35,7 +35,7 @@ if(isset($_POST['register'])){
         $sql="INSERT INTO users(firstname,lastname,email,password,confirmpassword) Values('$firstname','$lastname','$email','$password1','$password2')";
         mysqli_query($db,$sql);
 
-        header('location:login.php');
+        header('')
     }
     
 }

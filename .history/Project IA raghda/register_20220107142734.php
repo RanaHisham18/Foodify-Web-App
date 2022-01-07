@@ -25,10 +25,10 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="register.php">Sign Up</a>
+                <a class="nav-link" href="#">Sign Up</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.php">Log in</a>
+                <a class="nav-link" href="#">Log in</a>
               </li>
              
             </ul>
@@ -83,7 +83,7 @@
         
         <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
     
-        <button type="submit" class="registerbtn" name="register">Register</button> 
+       <a href=""></a> <button type="submit" class="registerbtn" name="register">Register</button>
       </div>
       
       <div class=" signin">
