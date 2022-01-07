@@ -9,24 +9,27 @@ body{
      width:130px;
     margin-left: 20px;
   }
-  
+  .scroll{
+    margin-top:200px;
+    margin-left:50px;
+}
 
-.dinnerimg{
+
+.breakfastimg{
     margin: 15px;
-
 }
-
-.dinnertext{
+.breakfasttext{
     width: 50%;
     margin: 25px;
     float: left;
 }
-.spaghettiimg{
+
+.muffinsimg{
     width: 50%;
     margin: 25px;
     float: left;
 }
-.spaghettitext{
+.muffinstext{
     margin-top: 130px;
 }
 
