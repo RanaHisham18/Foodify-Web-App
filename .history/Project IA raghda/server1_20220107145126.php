@@ -52,6 +52,11 @@ if(isset($_POST['login'])){
     if(count($error)==0){
         $query="SELECT * FROM users WHERE email='$email' AND password='$password'";
         $result=mysqli_query($db,$query);
+       /* if(mysqli_num_rows($result)==1){
+            $_SESSION['email']=$email;
+            $_SESSION['success']="Welcome you are logged in";
+            //checks db table row by row
+        }
     }
 }
 //logout

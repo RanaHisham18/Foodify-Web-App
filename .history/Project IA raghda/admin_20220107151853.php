@@ -94,7 +94,8 @@ if ($roww = mysqli_fetch_array($ress)){
     <?php
 }
 else{
-  
+
+  <
     echo "Name not found";
 
 
@@ -103,7 +104,7 @@ else{
 
 
 ?>
-<br> 
+
 <label class="label2"> To display all reciepes from database click here </label>
  <a href="records.php" > See more</a>
 

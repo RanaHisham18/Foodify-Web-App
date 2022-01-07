@@ -40,12 +40,13 @@
   //getting id
   $id=$_GET['id'];
   $qry1=mysqli_query($db,"select*from reciepes where id='$id'");
-  $data=mysqli_fetch_array($qry1); //fetch data from databse by rows 
+  $data=mysqli_fetch_array($qry1); //fetch data 
    
   if(isset($_POST['update'])) //click on update
   {
     $productname=$_POST['name'];
     $type=$_POST['category'];
+
     $sql1="update reciepes set name='$productname',category='$type' where id='$id'";
     $edit=mysqli_query($db,$sql1);
 

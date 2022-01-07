@@ -55,7 +55,7 @@
 <?php 
 
 include 'server1.php';
-/*$con = 'server1.php';*/
+/*$con = 'server1.php';
 if(isset($_POST['submit'])){
     $ss = $_POST['search'];
     $query= "SELECT * FROM `reciepes` WHERE `id`='$ss'";
@@ -94,7 +94,6 @@ if ($roww = mysqli_fetch_array($ress)){
     <?php
 }
 else{
-  
     echo "Name not found";
 
 
@@ -103,7 +102,7 @@ else{
 
 
 ?>
-<br> 
+
 <label class="label2"> To display all reciepes from database click here </label>
  <a href="records.php" > See more</a>
 

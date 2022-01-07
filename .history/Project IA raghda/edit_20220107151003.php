@@ -46,6 +46,7 @@
   {
     $productname=$_POST['name'];
     $type=$_POST['category'];
+
     $sql1="update reciepes set name='$productname',category='$type' where id='$id'";
     $edit=mysqli_query($db,$sql1);
 
