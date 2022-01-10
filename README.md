@@ -3,4 +3,4 @@ Group project for the college.
 Laguages used (html, Css, Bootstrap, Php) 
 Database used is Php my admin
 The contributors are my team mates (Raghda, Dalia, Dina)
-I was responsible for merging pull requests and handling the githup repository in general.
+I was responsible for merging pull requests and handling the githup repository in general as well as my coding part.
